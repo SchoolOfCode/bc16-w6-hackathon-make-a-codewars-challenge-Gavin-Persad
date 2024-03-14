@@ -1,7 +1,7 @@
 # Darts to finish
 
 ## Disney Ideation
-### Dreams
+    Dreams
     1.snooker scorer - take in array of coloured balls and work out the score of the run based on the points assigned to each ball
     2.darts to finish - is there a possible way to finish a game of darts with 3 darts from your current score
     3.how many subs left - the new substituion rule caused confusion in Arsenals champions league game on tuesday. Make an function to show how many subs and breaks in play are left
@@ -29,11 +29,11 @@ They think that this will be a simple problem to tackle.
 
 ## The Kata
 
-Can you finish in three darts? When given your current score in darts can you work out if it is possible to finish the game with three darts. In darts you start with a score of 501, each time you hit a board section, the score of that section is subtracted from that score. You need to get to 0 first but cannot go over. Therefore it is important to know if you can finish the game from the current score you are on. This is your aim. When given your current score write a function that will either return the score (if it is a possible finish) or "No finish possible" if you cannot finish. You also have to have your last dart hit a special section (any double, triple, bullseye, or outer bull).
+Can you finish in three darts? When given your current score in darts, can you work out if it is possible to finish the game with three darts? In darts, you start with a score of 501. Each time you hit a board section, the score of that section is subtracted from your total score. You need to reach 0 first but cannot exceed it. Therefore, it is important to determine if you can finish the game from your current score. This is your aim. When given your current score, write a function that will either return the score (if it is a possible finish) or "No finish possible" if you cannot finish. Additionally, your last dart must hit a special section (any double, triple, bullseye, or outer bull). The inputted scores will be between 501 and 1.
 
 ### Sections of the dart board
 
-| Singles | Doubles | Triples | Specials |
+| Singles | Doubles | Triples | Centre |
 | ------- | ------- | ------- | -------- |
 | 1       | D1      | T1      | 50 (bullseye) |
 | 2       | D2      | T2      | 25 (outer bull) |
@@ -56,4 +56,16 @@ Can you finish in three darts? When given your current score in darts can you wo
 | 19      | D19     | T19     |
 | 20      | D20     | T20     |
 
-## The plan
+## Plan
+1. Create the required sheets and link them
+2. Install required testing packages and create barebones test to ensure working
+3. Create a test to check that the score of 501 returns "No finish possible"
+4. make a function to return "No finish possible"
+5. follow the TDD loop until the following has been checked
+     - x incorrect test returnting "No finish possible"
+     - y correct tests returning the current score
+6. last feedback and ensuring the tests are solid. Allow testers to play
+7. Final polishing and add instructions
+8. Share Kata and finalise presentation
+9. Upload to Code Wars
+10. Enjoy a tea in my cool school of code mug
