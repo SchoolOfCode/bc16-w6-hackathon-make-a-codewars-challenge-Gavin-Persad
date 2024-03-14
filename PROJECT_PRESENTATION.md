@@ -1,1 +1,59 @@
-Put your plan, story, and any supporting material here, you could use the help of a readme markdown generator such as [readme.so](https://readme.so/)
+# Darts to finish
+
+## Disney Ideation
+### Dreams
+    1.snooker scorer - take in array of coloured balls and work out the score of the run based on the points assigned to each ball
+    2.darts to finish - is there a possible way to finish a game of darts with 3 darts from your current score
+    3.how many subs left - the new substituion rule caused confusion in Arsenals champions league game on tuesday. Make an function to show how many subs and breaks in play are left
+    4.poker, best possible hand - from the five community cars that are shown (this will be inputted as arrays), what is the best two cards you could have in your hand.
+
+### Realist
+    1. Too many variables (ie. fouls)
+    2. possible
+    3. too confusing to explain the problem to non football fans
+    4. possible
+
+### Critic
+    1. too easy
+    2. some knowledge of darts needed
+    3. explaining would be to complex
+    4. the solution could be complex
+
+### Conclusion
+    2. 3 Darts to finish is the Kata
+
+
+## Early Feedback
+I put the ideas to my team and they agreed that this will be a possible kata, however I will need to expain the scoring systems of darts in the kata description.
+They think that this will be a simple problem to tackle.
+
+## The Kata
+
+Can you finish in three darts? When given your current score in darts can you work out if it is possible to finish the game with three darts. In darts you start with a score of 501, each time you hit a board section, the score of that section is subtracted from that score. You need to get to 0 first but cannot go over. Therefore it is important to know if you can finish the game from the current score you are on. This is your aim. When given your current score write a function that will either return the score (if it is a possible finish) or "No finish possible" if you cannot finish. You also have to have your last dart hit a special section (any double, triple, bullseye, or outer bull).
+
+### Sections of the dart board
+
+| Singles | Doubles | Triples | Specials |
+| ------- | ------- | ------- | -------- |
+| 1       | D1      | T1      | 50 (bullseye) |
+| 2       | D2      | T2      | 25 (outer bull) |
+| 3       | D3      | T3      |
+| 4       | D4      | T4      |
+| 5       | D5      | T5      |
+| 6       | D6      | T6      |
+| 7       | D7      | T7      |
+| 8       | D8      | T8      |
+| 9       | D9      | T9      |
+| 10      | D10     | T10     |
+| 11      | D11     | T11     |
+| 12      | D12     | T12     |
+| 13      | D13     | T13     |
+| 14      | D14     | T14     |
+| 15      | D15     | T15     |
+| 16      | D16     | T16     |
+| 17      | D17     | T17     |
+| 18      | D18     | T18     |
+| 19      | D19     | T19     |
+| 20      | D20     | T20     |
+
+## The plan
