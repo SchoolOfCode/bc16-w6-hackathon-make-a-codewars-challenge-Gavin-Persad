@@ -14,7 +14,7 @@ test("bare bones", function (){
     });
 
     //501 test
-test("501 should return no  possible", function (){
+    test("501 should return no finish possible", function (){
     //Arrange
     const currentScore = 501;
     const expected = "No finish possible";
@@ -24,4 +24,13 @@ test("501 should return no  possible", function (){
     expect(actual).toBe(expected);
     });
 
-    
+    // 180 test
+    test("180 should return 180", function (){
+    //Arrange
+    const currentScore = 180;
+    const expected = 180;
+    //Act
+    const actual = canIFinish(currentScore);
+    //Assert
+    expect(actual).toBe(expected);
+    });
