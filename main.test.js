@@ -1,8 +1,8 @@
 import { expect, test } from 'vitest';
 import { canIFinish } from "./main.js";
 
-//bare bones test
-test("bare bones", function (){
+    //bare bones test
+    test("bare bones", function (){
     //Arrange
     const a = 1;
     const b = 2;
@@ -14,7 +14,7 @@ test("bare bones", function (){
     });
 
     //501 test
-    test("501 should return no finish possible", function (){
+    test("501 should return No finish possible", function (){
     //Arrange
     const currentScore = 501;
     const expected = "No finish possible";
@@ -36,7 +36,7 @@ test("bare bones", function (){
     });
 
     // 181 boundary test
-    test("180 should return 180", function (){
+    test("181 should return No finish possible", function (){
     //Arrange
     const currentScore = 181;
     const expected = "No finish possible";

@@ -56,6 +56,16 @@ Can you finish in three darts? When given your current score in darts, can you w
 | 19      | D19     | T19     |
 | 20      | D20     | T20     |
 
+## Test Cases
+
+1. 501 should return "No finish possible"
+2. 180 should return 180
+3. 181 should return "No finish possible"
+4. 1 should return "No finish possible"
+5. 2 should return 2
+6. 179 should return "No finish possible"
+7. 177 should return 177
+
 ## Plan
 1. Create the required sheets and link them
 2. Install required testing packages and create barebones test to ensure working
@@ -71,3 +81,30 @@ Can you finish in three darts? When given your current score in darts, can you w
 10. Enjoy a tea in my cool school of code mug
 
 11. Stretch goal. Instead of returning the correct score, return the required sections that you need to hit to get to 0 points.
+
+## Hackathon review
+
+I was really pleased with how the hackathon turned out. Once I started testing, things just fell into place. By sticking to the TDD method, I made sure to thoroughly test the limits to guarantee accurate results. Unfortunately, I didn't manage to reach my stretch goal due to running out of time for a tricky next step. I believe the success of the hackathon was down to careful planning, both for the kata and project completion. I was also happy with the creative process during the Disney ideation phase, which helped me decide on the kata.
+
+## My working solution
+
+```javascript
+export function canIFinish(currentScore) {
+    if (currentScore > 180) {
+        return "No finish possible";
+    } else {
+        const noFinishPossible = [
+            1, 163, 166, 169, 172, 173, 175, 176, 178, 179
+        ];
+        if (noFinishPossible.includes(currentScore)) {
+            return "No finish possible";
+        } else {
+            return currentScore;
+        }
+    }
+}
+
+
+
+
+
