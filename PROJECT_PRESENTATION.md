@@ -29,7 +29,7 @@ They think that this will be a simple problem to tackle.
 
 ## The Kata
 
-Can you finish in three darts? When given your current score in darts, can you work out if it is possible to finish the game with three darts? In darts, you start with a score of 501. Each time you hit a board section, the score of that section is subtracted from your total score. You need to reach 0 first but cannot exceed it. Therefore, it is important to determine if you can finish the game from your current score. This is your aim. When given your current score, write a function that will either return the score (if it is a possible finish) or "No finish possible" (if you cannot finish). Additionally, your last dart must hit a double or the bullseye. The inputted scores will be between 501 and 1.
+Can you finish in three darts? When given your current score in darts, can you work out if it is possible to finish the game with three darts? In darts, you start with a score of 501. Each time you hit a board section, the score of that section is subtracted from your total score. You need to reach 0 first but cannot exceed it. Therefore, it is important to determine if you can finish the game from your current score. This is your aim. When given your current score, write a function that will either return the score (if it is a possible finish) or "No finish possible" (if you cannot finish). Additionally, your last dart must hit a double, bullseye or the outer bull. The inputted scores will be between 501 and 1.
 
 ### Sections of the dart board
 
