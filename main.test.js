@@ -34,3 +34,14 @@ test("bare bones", function (){
     //Assert
     expect(actual).toBe(expected);
     });
+
+    // 181 boundary test
+    test("180 should return 180", function (){
+        //Arrange
+        const currentScore = 181;
+        const expected = "No finish possible";
+        //Act
+        const actual = canIFinish(currentScore);
+        //Assert
+        expect(actual).toBe(expected);
+        });

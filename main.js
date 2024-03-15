@@ -30,9 +30,9 @@ Can you finish in three darts? When given your current score in darts, can you w
 "No Possible Finish"
 
 export function canIFinish(currentScore) {
-    if (currentScore === 501) {
-        return "No finish possible"
+    if (currentScore > 180) {
+        return "No finish possible";
     } else {
-        return currentScore
+        return currentScore;
     }
 }
