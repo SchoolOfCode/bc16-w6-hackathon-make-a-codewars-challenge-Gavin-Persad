@@ -37,11 +37,23 @@ test("bare bones", function (){
 
     // 181 boundary test
     test("180 should return 180", function (){
-        //Arrange
-        const currentScore = 181;
-        const expected = "No finish possible";
-        //Act
-        const actual = canIFinish(currentScore);
-        //Assert
-        expect(actual).toBe(expected);
-        });
+    //Arrange
+    const currentScore = 181;
+    const expected = "No finish possible";
+    //Act
+    const actual = canIFinish(currentScore);
+    //Assert
+    expect(actual).toBe(expected);
+    });
+
+    // 1 lowest possible out test
+    test("1 should return No finish possible", function (){
+    //Arrange
+    const currentScore = 1;
+    const expected = "No finish possible";
+    //Act
+    const actual = canIFinish(currentScore);
+    //Assert
+    expect(actual).toBe(expected);
+    });
+        

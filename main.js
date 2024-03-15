@@ -27,12 +27,19 @@ Can you finish in three darts? When given your current score in darts, can you w
 | 19      | D19     | T19     |
 | 20      | D20     | T20     | */
 
-"No Possible Finish"
+
 
 export function canIFinish(currentScore) {
     if (currentScore > 180) {
         return "No finish possible";
     } else {
-        return currentScore;
+        const noFinishPossible = [
+            1, 163, 166, 169, 172, 173, 175, 176, 178, 179
+        ];
+        if (noFinishPossible.includes(currentScore)) {
+            return "No finish possible";
+        } else {
+            return currentScore;
+        }
     }
 }
