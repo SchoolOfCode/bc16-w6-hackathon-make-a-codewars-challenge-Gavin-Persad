@@ -5,7 +5,7 @@
     1.snooker scorer - take in array of coloured balls and work out the score of the run based on the points assigned to each ball
     2.darts to finish - is there a possible way to finish a game of darts with 3 darts from your current score
     3.how many subs left - the new substituion rule caused confusion in Arsenals champions league game on tuesday. Make an function to show how many subs and breaks in play are left
-    4.poker, best possible hand - from the five community cars that are shown (this will be inputted as arrays), what is the best two cards you could have in your hand.
+    4.poker, best possible hand - from the five community cards that are shown (this will be inputted as arrays), what is the best two cards you could have in your hand.
 
 ### Realist
     1. Too many variables (ie. fouls)
@@ -29,7 +29,7 @@ They think that this will be a simple problem to tackle.
 
 ## The Kata
 
-Can you finish in three darts? When given your current score in darts, can you work out if it is possible to finish the game with three darts? In darts, you start with a score of 501. Each time you hit a board section, the score of that section is subtracted from your total score. You need to reach 0 first but cannot exceed it. Therefore, it is important to determine if you can finish the game from your current score. This is your aim. When given your current score, write a function that will either return the score (if it is a possible finish) or "No finish possible" if you cannot finish. Additionally, your last dart must hit a special section (any double, triple, bullseye, or outer bull). The inputted scores will be between 501 and 1.
+Can you finish in three darts? When given your current score in darts, can you work out if it is possible to finish the game with three darts? In darts, you start with a score of 501. Each time you hit a board section, the score of that section is subtracted from your total score. You need to reach 0 first but cannot exceed it. Therefore, it is important to determine if you can finish the game from your current score. This is your aim. When given your current score, write a function that will either return the score (if it is a possible finish) or "No finish possible" (if you cannot finish). Additionally, your last dart must hit a special section (any double, triple, bullseye, or outer bull). The inputted scores will be between 501 and 1.
 
 ### Sections of the dart board
 
@@ -69,3 +69,5 @@ Can you finish in three darts? When given your current score in darts, can you w
 8. Share Kata and finalise presentation
 9. Upload to Code Wars
 10. Enjoy a tea in my cool school of code mug
+
+11. Stretch goal. Instead of returning the correct score, return the required sections that you need to hit to get to 0 points.
