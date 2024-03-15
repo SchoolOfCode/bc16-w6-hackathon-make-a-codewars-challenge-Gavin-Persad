@@ -24,21 +24,21 @@ import { canIFinish } from "./main.js";
     expect(actual).toBe(expected);
     });
 
-    // 180 test
-    test("180 should return 180", function (){
+    // 170 test
+    test("170 should return 170", function (){
     //Arrange
-    const currentScore = 180;
-    const expected = 180;
+    const currentScore = 170;
+    const expected = 170;
     //Act
     const actual = canIFinish(currentScore);
     //Assert
     expect(actual).toBe(expected);
     });
 
-    // 181 boundary test
-    test("181 should return No finish possible", function (){
+    // 171 boundary test
+    test("171 should return No finish possible", function (){
     //Arrange
-    const currentScore = 181;
+    const currentScore = 171;
     const expected = "No finish possible";
     //Act
     const actual = canIFinish(currentScore);
@@ -68,10 +68,10 @@ import { canIFinish } from "./main.js";
     expect(actual).toBe(expected);
     });
 
-    // 179 lowest not possible under 180 out test
-    test("179 should return No finish possible", function (){
+    // 169 lowest not possible under 170 out test
+    test("169 should return No finish possible", function (){
     //Arrange
-    const currentScore = 179;
+    const currentScore = 169;
     const expected = "No finish possible";
     //Act
     const actual = canIFinish(currentScore);
@@ -79,11 +79,34 @@ import { canIFinish } from "./main.js";
     expect(actual).toBe(expected);
     });
 
-    // 177 highest possible out test
-     test("177 should return 177", function (){
+    // 167 highest possible out test
+     test("167 should return 167", function (){
     //Arrange
-    const currentScore = 177;
-    const expected = 177;
+    const currentScore = 167;
+    const expected = 167;
+    //Act
+    const actual = canIFinish(currentScore);
+    //Assert
+    expect(actual).toBe(expected);
+    });
+
+    // Random tests
+    test("132 should return 132", function (){
+    //Arrange
+    const currentScore = 132;
+    const expected = 132;
+    //Act
+    const actual = canIFinish(currentScore);
+    //Assert
+    expect(actual).toBe(expected);
+    });
+
+
+    // Random tests
+    test("285 should return No finish possible", function (){
+    //Arrange
+    const currentScore = 285;
+    const expected = "No finish possible";
     //Act
     const actual = canIFinish(currentScore);
     //Assert

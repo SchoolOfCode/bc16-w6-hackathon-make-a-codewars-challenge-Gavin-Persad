@@ -29,7 +29,7 @@ They think that this will be a simple problem to tackle.
 
 ## The Kata
 
-Can you finish in three darts? When given your current score in darts, can you work out if it is possible to finish the game with three darts? In darts, you start with a score of 501. Each time you hit a board section, the score of that section is subtracted from your total score. You need to reach 0 first but cannot exceed it. Therefore, it is important to determine if you can finish the game from your current score. This is your aim. When given your current score, write a function that will either return the score (if it is a possible finish) or "No finish possible" (if you cannot finish). Additionally, your last dart must hit a special section (any double, triple, bullseye, or outer bull). The inputted scores will be between 501 and 1.
+Can you finish in three darts? When given your current score in darts, can you work out if it is possible to finish the game with three darts? In darts, you start with a score of 501. Each time you hit a board section, the score of that section is subtracted from your total score. You need to reach 0 first but cannot exceed it. Therefore, it is important to determine if you can finish the game from your current score. This is your aim. When given your current score, write a function that will either return the score (if it is a possible finish) or "No finish possible" (if you cannot finish). Additionally, your last dart must hit a double or the bullseye. The inputted scores will be between 501 and 1.
 
 ### Sections of the dart board
 
@@ -59,12 +59,12 @@ Can you finish in three darts? When given your current score in darts, can you w
 ## Test Cases
 
 1. 501 should return "No finish possible"
-2. 180 should return 180
+2. 180 should return "No finish possible"
 3. 181 should return "No finish possible"
 4. 1 should return "No finish possible"
 5. 2 should return 2
 6. 179 should return "No finish possible"
-7. 177 should return 177
+7. 170 should return 170
 
 ## Plan
 1. Create the required sheets and link them
@@ -89,12 +89,12 @@ I was really pleased with how the hackathon turned out. Once I started testing, 
 ## My working solution
 
 ```javascript
-export function canIFinish(currentScore) {
-    if (currentScore > 180) {
+function canIFinish(currentScore) {
+    if (currentScore > 170) {
         return "No finish possible";
     } else {
         const noFinishPossible = [
-            1, 163, 166, 169, 172, 173, 175, 176, 178, 179
+            1, 159, 162, 163, 165, 166, 168, 169
         ];
         if (noFinishPossible.includes(currentScore)) {
             return "No finish possible";
@@ -103,6 +103,7 @@ export function canIFinish(currentScore) {
         }
     }
 }
+
 
 
 
